@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>投票</title>
+	<!-- <link href="css/demo.css" rel="stylesheet" type="text/css" /> -->
+	<link rel="stylesheet" href="css/jqbar.css" />
+</head>
+<body >
+
+	<div class="container">
+		<!-- <div class="sixteen columns ">
+			<div class="nine columns">
+				<div class="bars MT30"> -->
+					<div id="bar-1"></div>
+					<div id="bar-2"></div>
+					<div id="bar-3"></div>
+					<div id="bar-4"></div>	
+	<!-- 			</div>
+			</div>
+		</div> -->
+	</div>
+	<button id="button">投票</button>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jqbar.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+		$('#bar-1 ').jqbar({ duration:8000, src:'1.png', label: '西元隆', value: 0, barColor: '#D64747', orientation: 'v' });
+		$('#bar-2 ').jqbar({duration:8000,src:'2.png',label: '陈伟波', value: 0,barColor: 'red',  orientation: 'v' });
+		$('#bar-3 ').jqbar({ duration:8000,src:'3.png',label: '费鑫鑫', value: 0,barColor: '#ea805c',  orientation: 'v' });
+		$('#bar-4 ').jqbar({ duration:8000,src:'4.png',label: '华飘', barColor: '#88bbc8', value: 0, orientation: 'v' });	
+	});
+      var button=document.getElementById("button");
+      button.onclick=function(){
+       $('#bar-1,#bar-2,#bar-3,#bar-4').empty();
+
+      	$('#bar-1 ').jqbar({ duration:8000,src:'1.png',label: '西元隆', value: 30, barColor: '#fff', orientation: 'v' });
+		$('#bar-2 ').jqbar({ duration:8000,src:'2.png',label: '陈伟波', value: 149,barColor: '#fff',  orientation: 'v' });
+		$('#bar-3 ').jqbar({ duration:8000,src:'3.png',label: '费鑫鑫', value: 5,barColor: '#fff',  orientation: 'v' });
+		$('#bar-4 ').jqbar({duration:8000, src:'4.png',label: '华飘', value: 90,barColor: '#fff',  orientation: 'v' });
+		
+      }
+	
+</script>
+</body>
+</html>

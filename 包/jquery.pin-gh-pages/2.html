@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>怎么让div悬浮在网页的固定地方</title>
+</head>
+<body>
+    <style type="text/css">
+.a{
+margin-top:90px;
+border: 1px solid #000;
+height:1900px;
+width:100%;
+}
+.b{
+/*float:right;*/
+width:200px;
+border: 1px solid #000;
+height:500px;
+}
+.pinned{
+background-color:#660099;
+border: 1px solid #000;
+width:200px;
+height:200px;
+}
+    </style>
+<div class="a">
+<div class="b">
+<div class="pinned">sss</div>
+      </div>  
+      <!--   <div class="c"></div> -->
+   </div> 
+</body>
+
+    <!-- Include jQuery and jquery.pin -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="jquery.pin.js"></script>
+
+    <!-- PIN ALL THE THINGS! -->
+    <script>$(".pinned").pin({containerSelector: ".b", minWidth: 940});</script>
+    <!-- That's all - pretty easy, right? -->
+</html>

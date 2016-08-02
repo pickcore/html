@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>投票</title>
+<style> 
+ .content{
+     	width: 400px;
+     	position:relative;
+     	height: 400px;
+     	margin: 50px auto;
+     	border: 1px solid gray;
+     }
+#myDIV {
+    width: 50px;
+     	height: 10px;
+     	position:absolute;
+     	bottom:0;
+     	background-color: #f60;
+     	margin-left: 30px;
+}
+@-webkit-keyframes mymove {
+    from {height: 0px;}
+    to {height: : 200px;}
+}
+
+@keyframes mymove {
+    from {height: 0px;}
+    to {height: 200px;}
+}
+</style>
+</head>
+<body>
+<div class="content">
+<div id="myDIV" onclick="myFunction()"></div>
+</div>
+<script>
+var x = document.getElementById("myDIV")
+function myFunction(){
+    x.style.animation = "mymove 4s ";
+}
+x.addEventListener("animationend", myEndFunction);
+function myEndFunction() {
+    this.style.height= "200px";
+}
+</script>
+</body>
+</html>

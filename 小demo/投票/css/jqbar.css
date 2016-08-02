@@ -1,0 +1,18 @@
+.jqbar{position: relative;top: 100px;}
+.jqbar.vertical{text-align: center;display: inline-block;}
+.jqbar.vertical span{display: block;font-size: 18px;font-weight: bold;color: white;}
+.jqbar.vertical .bar-percent{font-size: 18px;font-weight: bold;position: absolute;height: 20px;margin-bottom: 5px;width: 100%;color: white;}
+.jqbar.vertical .bar-level-wrapper{position: relative;margin-bottom: 5px;display: inline-block;overflow: hidden;}
+.jqbar.vertical .bar-level{position: absolute;}
+
+.container{position: relative;width: 550px;margin: 0 auto;padding: 0;height: 100%;}
+.column, .columns{float: left;display: inline;margin-left: 10px;margin-right: 10px;}
+img{border-radius:50%;width: 60px;height: 60px;display: block;position: absolute;top:-80px; }
+#bar-1{top: calc(50vh - 240px);left: 10px;}
+#bar-2{top: calc(50vh - 240px);left: 90px;}
+#bar-3{top: calc(50vh - 240px);left: 170px;}
+#bar-4{top: calc(50vh - 240px);left: 250px;}
+
+*{margin: 0;padding:0; font-size: 16px;}
+body{background: url(../bg.jpg) top center no-repeat; background-size:cover; }
+button{position: absolute;bottom:10vh;left:47%;width: 60px;height: 30px;border-radius:5px;}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	测试</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+<script language=JavaScript> 
+　　var curfontsize=10; 
+　　function fontZoomA(){ 
+　   document.getElementById('fontzoom').style.fontSize=(--curfontsize)+'px'; 
+　　} 
+　　function fontZoomB(){ 
+　　 document.getElementById('fontzoom').style.fontSize=(++curfontsize)+'px';  
+　　} 
+</script>
+<a href="javascript:fontZoomB();" >↑大</a>
+<a href="javascript:fontZoomA();">↑小</a>
+<div id="fontzoom">形象网，气温骤降</div>
+</body>
+</html>
